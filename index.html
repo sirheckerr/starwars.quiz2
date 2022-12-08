@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Starwars Quiz</title>
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+  <link rel="apple-touch-icon" href="LightsaberICON.jpg">
+	  <script src="quizproject.js"></script>
+	  <link rel="stylesheet" type="text/css" href="quizproject.css">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="manifest.json">
+   <meta name="theme-color" content="#317EFB"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+  </head>
+<body onLoad="loadQuestion()">
+
+<section id="lightbox" onclick="closeLightBox()">
+   <div id="message">This is the message</div>
+</section>
+
+<h1 id="title">StarWars: The Complete Saga Quiz</h1>
+
+<main class="grid-container">
+  <header class="header">
+    <div id="question" white-space: normal;>The Question</div>
+  </header>
+  
+  <aside class="left">
+    <div>
+      <div class="options" id="a" onclick="markIt('a')">A.</div>
+      <br>
+      <br>
+      <br>
+      <div class="options" id="b" onclick="markIt('b')">B.</div>
+      <br>
+      <br>
+      <br>
+      <div class="options" id="c" onclick="markIt('c')">C.</div>
+      <br>
+      <br>
+      <br>
+      <div class="options" id="d" onclick="markIt('d')">D.</div>
+      <br>
+      <br>
+      <br>
+      <br>
+     
+      <div class="fiftyfifty" id="F" onclick="fiftyfifty()"><p>Use 50/50? uses left: <span id="count">2</span></p></div>
+    </div>
+
+
+
+  </aside> 
+
+ 
+
+
+ 
+  
+  <figure class="right"> <img id="image" src="" alt="" alt-style="max-width: 1000px;"></figure>
+  
+  <footer class="footer1">
+    <p>Instructions or additional features go here.</p>
+  </footer>
+  
+  <footer class="footer2">
+    <p id="score">Score  <span id="score"></span></p>
+  </footer>
+</main>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
